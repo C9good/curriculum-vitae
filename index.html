@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈青山的个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <button id="prevBtn">上一页</button>
+        <span id="pageIndicator">1 / 4</span>
+        <button id="nextBtn">下一页</button>
+    </div>
+    <div class="container">
+        <div class="page" id="intro">
+            <h1>陈青山的个人情况</h1>
+            <div class="profile">
+                <img src="images/myself.jpg" alt="个人照片" id="profile-photo">
+                <div class="info">
+                    <h2>陈青山</h2>
+                    <p>年龄：21岁</p>
+                    <p>个人博客：<a href="https://blog.csdn.net/qq_64997449?">CSDN博客</a></p>
+                    <p>求职意向：Java后端开发工程师</p>
+                    <p>联系电话：19836061786</p>
+                    <p>邮箱：mountax@qq.com</p>
+                    <p>政治面貌：共青团员</p>
+                    <p>现居地址：河南省信阳市</p>
+                </div>
+
+                <img src="images/gr.png" alt="个人照片" id="profile-photo2">
+
+            </div>
+            <div class="carousel-container">  
+                <div class="carousel-slide">  
+                    <div class="carousel-track">  
+                        <img src="./images/zhengshu/国家励志奖学金.png" class="carousel-image">  
+                        <img src="./images/zhengshu/校级一等奖学金.png" class="carousel-image">  
+                        <img src="./images/zhengshu/学科竞赛奖学金.png" class="carousel-image">  
+                        <img src="./images/zhengshu/学科竞赛奖学金2.png" class="carousel-image">  
+                        <img src="./images/zhengshu/企校协同创新大赛全国总决赛.png" class="carousel-image">  
+                        <img src="./images/zhengshu/企校协同创新大赛.png" class="carousel-image">  
+                        <img src="./images/zhengshu/全国机器人锦标赛.png" class="carousel-image">  
+                        <img src="./images/zhengshu/蓝桥杯大赛国优.png" class="carousel-image">  
+                        <img src="./images/zhengshu/蓝桥杯大赛省一.png" class="carousel-image">  
+                        <img src="./images/zhengshu/蓝桥杯大赛省二.png" class="carousel-image">  
+                        <img src="./images/zhengshu/全国大学生数学建模大赛.png" class="carousel-image">  
+                        <img src="./images/zhengshu/数学竞赛省三.png" class="carousel-image">  
+                        <img src="./images/zhengshu/河南省物联网设计大赛特等奖.png" class="carousel-image">  
+                        <img src="./images/zhengshu/河南省物联网设计大赛.png" class="carousel-image">  
+                        <img src="./images/zhengshu/省级三好学生.png" class="carousel-image">  
+                        <img src="./images/zhengshu/校级三好标兵.png" class="carousel-image">  
+                        <img src="./images/zhengshu/校级三好学生.png" class="carousel-image">  
+                        <img src="./images/zhengshu/先进个人.png" class="carousel-image">  
+                        <img src="./images/zhengshu/优秀社团会员.png" class="carousel-image">  
+                        <img src="./images/zhengshu/优秀学员.png" class="carousel-image">   
+                        
+                        <!-- 添加更多图片 -->  
+                    </div>  
+                </div>  
+            </div> 
+        </div>
+
+        <div class="page" id="education">
+            <h2>校园经历</h2>
+            <div class="chart-container">
+                <canvas id="gpaChart"></canvas>
+                <canvas id="gpaChart2" width="400" height="200"></canvas> 
+            </div>
+            <div class="scholarships">
+                <h3>奖学金</h3>
+                <div class="scholarship-images">
+                    <img src="./images/zhengshu/国家励志奖学金.png" alt="国家励志奖学金">
+                    <img src="./images/zhengshu/校级一等奖学金.png" alt="校级一等奖学金">
+                    <img src="./images/zhengshu/学科竞赛奖学金.png" alt="学科竞赛奖学金1">
+                    <img src="./images/zhengshu/学科竞赛奖学金2.png" alt="学科竞赛奖学金2">
+                </div>
+            </div>
+            <div class="honors-wall">
+                <h3>荣誉墙</h3>
+                <div class="honors-grid">
+                    <div class="honor-item">
+                        <h4>首届企校协同创新大赛</h4>
+                        <p>国一奖杯</p>
+                        <img src="./images/zhengshu/奖杯2.jpg" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>首届企校协同创新大赛</h4>
+                        <p>十强奖杯</p>
+                        <img src="./images/zhengshu/奖杯1.jpg" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>首届企校协同创新大赛</h4>
+                        <p>全国总决赛一等奖</p>
+                        <img src="./images/zhengshu/企校协同创新大赛全国总决赛.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>首届企校协同创新大赛</h4>
+                        <p>全国选拔赛</p>
+                        <img src="./images/zhengshu/企校协同创新大赛.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>全国机器人锦标赛</h4>
+                        <p>二等奖</p>
+                        <img src="./images/zhengshu/全国机器人锦标赛.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>第十五届蓝桥杯大赛国赛</h4>
+                        <p>C/C++程序设计优秀奖</p>
+                        <img src="./images/zhengshu/蓝桥杯大赛国优.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>第十五届蓝桥杯大赛省赛</h4>
+                        <p>C/C++程序设计一等奖</p>
+                        <img src="./images/zhengshu/蓝桥杯大赛省一.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>第十四届蓝桥杯大赛省赛</h4>
+                        <p>C/C++程序设计二等奖</p>
+                        <img src="./images/zhengshu/蓝桥杯大赛省二.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>2023全国大学生数学建模</h4>
+                        <p>三等奖</p>
+                        <img src="./images/zhengshu/全国大学生数学建模大赛.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>全国大学生数学竞赛</h4>
+                        <p>三等奖</p>
+                        <img src="./images/zhengshu/数学竞赛省三.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>河南省物联网设计大赛</h4>
+                        <p>特等奖</p>
+                        <img src="./images/zhengshu/河南省物联网设计大赛特等奖.png" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>大学生数学竞赛</h4>
+                        <p>全校第一(非数学专业)</p>
+                        <img src="./images/zhengshu/数学竞赛校一.jpg" class="honor-image-placeholder">
+                    </div>
+                    <div class="honor-item">
+                        <h4>华为AI证书</h4>
+                        <p>HCCDA-AI</p>
+                        <img src="./images/华为AI证书.png" class="honor-image-placeholder">
+                    </div>
+                </div>
+                <div class="honors-grid">
+                    <div class="honor-item">
+                        <h4>省级三好学生</h4>
+                        <img src="./images/zhengshu/省级三好学生.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>校级三好标兵</h4>
+                        <img src="./images/zhengshu/校级三好标兵.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>校级三好学生</h4>
+                        <img src="./images/zhengshu/校级三好学生.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>优秀学生干部</h4>
+                        <img src="./images/zhengshu/优秀学生干部.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>先进个人</h4>
+                        <img src="./images/zhengshu/先进个人.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>优秀志愿者</h4>
+                        <img src="./images/zhengshu/优秀志愿者.png" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <h4>优秀社团会员</h4>
+                        <img src="./images/zhengshu/优秀社团会员.png" class="honor-image-placeholder2">
+                    </div>
+
+                </div>
+                <div class="honors-grid">
+                    <div class="honor-item">
+                        <img src="./images/获奖4.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/获奖3.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/获奖2.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/获奖1.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/合照1.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/all1.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/all2.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/qh.jpg" class="honor-image-placeholder2">
+                    </div>
+                    <div class="honor-item">
+                        <img src="./images/wlw.jpg" class="honor-image-placeholder2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page" id="skills">
+            <h2>技能介绍</h2>
+            <!-- <div class="profile"> -->
+                <ul class="skills-list">
+                    <li>Java：掌握Java编程基础，熟悉Spring、SpringMVC、SpringBoot、MyBatis等主流开发框架，了解IOC、AOP、及MVC工作流程以及Maven、Git等工具的使用</li>
+                    <li>数据库：熟练使用MySQL、SQLServer数据库，熟悉Redis</li>
+                    <li>前端：熟悉HTML、CSS、JavaScript，了解jQuery、Vue等框架</li>
+                    <li>Linux：熟悉Linux常用命令及系统部署</li>
+                    <li>Python：精通Python基本语法、可以熟练编写脚本辅助工作</li>
+                </ul>
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            <!-- </div> -->
+            
+        </div>
+        
+        <div class="page" id="internship">
+            <h2>实习经历</h2>
+            <div class="project-card">
+                <h3>智慧酒店</h3>
+                <p><strong>项目时间：</strong> 2024.07 - 2023.09</p>
+                <p><strong>项目描述：</strong> 该项目集成了Zigbee无线通信、STM32主控芯片、WIFI通信技术、物联网云平台以及微信小程序，构建了一个全面的智慧酒店系统。该系统在舒适方面提供了温湿度自动控制系统、窗帘自动控制系统、床头智能小夜灯、室内语音氛围灯以及贴心管家自动控制系统，能够根据环境参数和用户需求自动调节室内环境，为入住者带来贴心呵护和舒适体验。同时，在安全方面，系统配备了烟雾预警系统和火焰预警系统，通过传感器实时检测室内情况，当达到预警值时进行声音提醒，并通过Zigbee无线传输数据给中控，确保入住者的安全</p>
+                <p><strong>实现技术：</strong> SpringBoot、MySQL、Mybatis、MQTT、Zigbee无线通信、STM32主控芯片、微信小程序。</p>
+                <h4>个人职责：</h4>
+                <ul>
+                    <li>负责区域组网，将各传感器采集到的数据，通过无线通信技术汇总在网关，上传至后端。</li>
+                    <li>负责开发微信小程序后端，实时解析网关上传的数据，并将数据保存进 MySQL 数据库</li>
+                    <li>负责开发微信小程序页面，实时展示传感器采集到的数据</li>
+                    <li>负责编写小程序逻辑控制，使用户可以通过小程序远程控制执行器设备。</li>
+                </ul>
+                <div class="video-placeholder">
+                    <img  width="500px" height="300px" src="images/zhengshu/最佳实习生.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="projects">
+            <h2>项目介绍</h2>
+            <div class="project-card">
+                <h3>智慧农产品分拣系统（组长）</h3>
+                <p><strong>项目时间：</strong> 2023.08 - 2023.12</p>
+                <p><strong>项目描述：</strong> 将农产品放置传送带，利用计算机视觉技术对传送带上的物品进行识别，识别该产品类别，随后根据识别结果，使用多线程技术将物品进行分类，将分拣结果保存进数据库、与数据可视化展示。</p>
+                <p><strong>实现技术：</strong> SpringBoot、MySQL、Mybatis、Redis、MQTT、阿里云OSS、Javascript、Axios、Echarts、YOLOv8</p>
+                <h4>个人职责：</h4>
+                <ul>
+                    <li>负责使用YOLOv8实现视觉检测模型的训练与部署</li>
+                    <li>负责网络通信协议方式的选定与优化，实现页面数据实时更新，提升网络通信性能</li>
+                    <li>负责使用阿里云OSS实现对识别好的图片的上传和下载，并使用Redis缓存数据完成页面数据的读取</li>
+                    <li>负责设计队列数据结构并编写多线程逻辑，以实现多个推杆对物品进行同时分类的并发操作，提高分拣效率</li>
+                </ul>
+                <div class="video-placeholder">
+                    <video width="100%" height="300px" controls>  
+                        <source src="vedio/智能分拣项目视频.mp4" type="video/mp4">   
+                    </video>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
